@@ -1,0 +1,266 @@
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
+
+:root {
+    --accent: #01ff09;
+}
+
+#menuKRCount > span {
+  display: none
+}
+
+#menuKRCount:before {
+    content:'$';
+    color: #69cd4d;
+}
+
+#endAContainer,
+#endAMerger,
+.endAHolder,
+#aContainer,
+#aMerger,
+#aHolder,
+.settingsBtn[style="width:auto;background-color:#994cd1"] {
+    display: none !important
+} 
+
+#subLogoButtons {
+  transform: translate
+}
+
+[data-freestar-ad] {
+  display: none;
+}
+
+.youNewDiv {
+  display: none;
+  background-color: transparent;
+  opacity: 0;
+}
+
+#streamContainer {
+  display: none;
+}
+
+#newsHolder {
+  display: none;
+}
+
+#editorBtnM {
+  display: none;
+}
+
+.headerBar {
+  background-color: transparent;
+}
+
+#mLevelCont {
+  display: none;
+}
+
+.menuSocialB {
+  display: none;
+}
+
+.leaderNameM {
+    animation: rainbowT .5s linear infinite;
+}
+
+#uiBase.onMenu #spectateUI {
+    display: block!important;
+    position: fixed;
+    bottom: 48.5%;
+    top: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+}
+
+#uiBase.onMenu #spectateHUD {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    left: unset;
+}
+
+#uiBase.onMenu #specTeam0, #uiBase.onMenu #spec0, #uiBase.onMenu #spec1, #uiBase.onMenu #specNames, #uiBase.onMenu #specStats, #uiBase.onMenu #specContr, #uiBase.onMenu #specKPDContr, #uiBase.onMenu #specSus, #uiBase.onMenu #specTeam1, #uiBase.onMenu #specGMessage, #uiBase.onMenu #specGameInfo {
+    display: none!important
+}
+
+#uiBase.onMenu #specTimer {
+    display: block!important;
+    font-size: 35px;
+    background-color: transparent;
+    color: rgba(255,255,255,.55)
+}
+
+#rankedSoonTm {
+  display: none;
+}
+
+#faceItIconM {
+  display: none;
+}
+
+#weapDisplay {
+    bottom: 15px;
+    right: 20px;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.weapIcon {
+    filter: drop-shadow(2px 2px var( --black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+    width: 160px;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 80px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+#ammoDisplay {
+    transform: unset;
+    background-color: transparent;
+    position: fixed;
+    left: calc(50% - 40px);
+    bottom: calc(50% - 60px);
+    height: 8px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(var(--white), var(--white));
+}
+
+#ammoVal {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    color: var(--accent);
+    font-size: 96px;
+    display: inline-block;
+    position: fixed;
+    right: calc(0% + 30px);
+    bottom: 70px;
+    text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--green)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#reloadMsg {
+	bottom: 150px;
+	text-shadow: var(--outline)
+}
+
+.classCard {
+    text-shadow: none;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    height: 228px;
+    line-height: 28px;
+    font-size: 0;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover {
+    font-size: 28px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.classWeap {
+    font-size: 0;
+    height: 0;
+}
+
+.classImgC {
+    margin-top: 12px;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover img {
+    opacity: unset;
+    transform: unset;
+}
+
+.classXPBar {
+    top: unset;
+    bottom: 0;
+    width: -webkit-fill-available;
+    left: -0;
+    height: 4px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.clsXPBarC {
+    margin: 0;
+    height: 4px;
+    background-color: var(--accent);
+}
+
+.skinCard[style*="#292929"], .noBtnCard[style*="#292929"] {
+    text-shadow: 0 0 2px var(--accent), 0 0 4px var(--accent);
+}
+
+.skinCard, .noBtnCard {
+    border-radius: 8px;
+    border-width: 0 !important;
+    border-bottom-width: 4px !important;
+    background-color: rgba(255,255,255,0.15);
+    width: 155px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skinCard.blackShad {
+    text-shadow: none;
+}
+
+.noBtnCard {
+    width: 145px;
+}
+
+.sprayImg {
+    margin-left: 20px;
+}
+
+.verticalSeparator {
+    display:none!important
+}
+
+#mailIcon {
+  display: none;
+}
+
+#menuJNKCount {
+  display: none;
+}
+
+#menuItemContainer {
+  background-color: transparent;
+}
